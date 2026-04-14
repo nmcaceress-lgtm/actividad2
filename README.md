@@ -16,6 +16,16 @@ npm run check
 npm run build
 ```
 
+## CI/CD
+
+El proyecto incluye un workflow en `.github/workflows/pages.yml` que:
+
+- valida con `npm run check`
+- compila con `npm run build`
+- publica automaticamente en GitHub Pages cuando hay un push a `main`
+
+Para que el despliegue funcione, el repositorio debe usar `GitHub Actions` como fuente de GitHub Pages.
+
 ## Estructura
 
 - `src/lib/core`: cliente HTTP, configuracion y adaptadores.

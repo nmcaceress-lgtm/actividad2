@@ -19,7 +19,7 @@
 	<CharacterSearch query={data.query} onQueryChange={onQueryChange} />
 
 	<div class="meta">
-		<p>{data.total} personajes</p>
+		<p>{data.loading ? 'Cargando personajes...' : `${data.total} personajes`}</p>
 		{#if data.error}
 			<p class="error">{data.error}</p>
 		{/if}

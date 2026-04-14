@@ -5,6 +5,7 @@ export type CharacterBrowserData = {
 	characters: Character[];
 	total: number;
 	query: string;
+	loading?: boolean;
 	pagination?: PaginationInfo;
 	filters?: CharacterFilters;
 	error?: string;
